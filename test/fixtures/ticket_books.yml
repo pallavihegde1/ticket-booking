@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  tnumber: MyString
+  issuedate: 2016-03-31
+  is_cancelled: false
+  canceldate: 2016-03-31
+  journeydate: 2016-03-31
+
+two:
+  name: MyString
+  tnumber: MyString
+  issuedate: 2016-03-31
+  is_cancelled: false
+  canceldate: 2016-03-31
+  journeydate: 2016-03-31

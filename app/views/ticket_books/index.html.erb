@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ticket Books</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Tnumber</th>
+      <th>Issuedate</th>
+      <th>Is cancelled</th>
+      <th>Canceldate</th>
+      <th>Journeydate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ticket_books.each do |ticket_book| %>
+      <tr>
+        <td><%= ticket_book.name %></td>
+        <td><%= ticket_book.tnumber %></td>
+        <td><%= ticket_book.issuedate %></td>
+        <td><%= ticket_book.is_cancelled %></td>
+        <td><%= ticket_book.canceldate %></td>
+        <td><%= ticket_book.journeydate %></td>
+        <td><%= link_to 'Show', ticket_book %></td>
+        <td><%= link_to 'Edit', edit_ticket_book_path(ticket_book) %></td>
+        <td><%= link_to 'Destroy', ticket_book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ticket book', new_ticket_book_path ,class:'btn' %>

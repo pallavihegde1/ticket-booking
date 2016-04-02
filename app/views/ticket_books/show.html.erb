@@ -1,0 +1,42 @@
+<div class="thank">
+
+<h3> Your booking is done. </h3>
+ <p> Below are your booking details . Thank you for choosing <b> Syook airlines </b> </p>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+ <strong>Name:</strong> 
+  <%= @ticket_book.name %>
+</p>
+
+<p>
+  <strong>Tnumber:</strong>
+  <%= @ticket_book.tnumber %>
+</p>
+
+<p>
+  <strong>Issuedate:</strong>
+  <%= @ticket_book.issuedate %>
+</p>
+<!--
+<p>
+  <strong>Is cancelled:</strong>
+  <%= @ticket_book.is_cancelled %>
+</p>
+
+<p>
+  <strong>Canceldate:</strong>
+  <%= @ticket_book.canceldate %>
+</p>
+-->
+<p>
+  <strong>Journeydate:</strong>
+  <%= @ticket_book.journeydate %>
+</p>
+
+<%= link_to 'Edit', edit_ticket_book_path(@ticket_book), class:"btn"%> |
+<%= link_to 'Back', ticket_books_path ,class:"btn"%>  <br/> <br/>
+
+
+</div>
